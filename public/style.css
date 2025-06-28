@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url("/img/prague.jpg");
+    background-image: url("/img/auroraborealis.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -55,14 +55,14 @@ header h1 {
     padding: 10px;
 }
 #h2_maindesktop {
-    color: rgb(57, 57, 57);
+    color: rgb(35, 35, 35);
     font-size: 30px;
     padding-bottom: 15px;
     padding-left: 15px;
 }
 
 #h2_sidebarleft {
-    color: rgb(57, 57, 57);
+    color: rgb(35, 35, 35);
     font-size: 20px;
     padding-top: 15px;
     padding-bottom: 15px;
