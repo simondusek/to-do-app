@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url("/img/auroraborealis.jpg");
+    background-image: url("/img/beach.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -22,6 +22,7 @@ header {
     /* border: 5px solid blue; */
     padding-left: 10px;
     padding-top: 5px;
+    cursor: default;
 }
 /* .main {
     display: flex;
@@ -32,6 +33,7 @@ header {
 header h1 {
     font-family: Helvetica;
     text-shadow: black;
+    cursor: default;
 } 
 .app {
     font-family: Helvetica;
@@ -54,11 +56,35 @@ header h1 {
     -webkit-backdrop-filter: blur(100px) saturate(100%);
     padding: 10px;
 }
+
+.sidebar-left {
+    width: 20%;
+    backdrop-filter: blur(14px) saturate(100%);
+    -webkit-backdrop-filter: blur(10px) saturate(100%);
+
+}
+
+.sidebar-right {
+    width: 0px;
+    backdrop-filter: blur(20px) saturate(100%);
+    -webkit-backdrop-filter: blur(20px) saturate(100%);
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    height: 50%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-items: flex-end;
+}
+
 #h2_maindesktop {
     color: rgb(35, 35, 35);
     font-size: 30px;
     padding-bottom: 15px;
     padding-left: 15px;
+    cursor: default;
 }
 
 #h2_sidebarleft {
@@ -67,28 +93,28 @@ header h1 {
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 20px;
+    cursor: default;
 }
-#add-action {
-    /* border: 1px solid red; */
+
+#add-task {
     cursor: pointer;
-    width: fit-content;
+    width:max-content;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-left: 15px;
+    margin-left: 15px;
 }
 #add-img {
-    /* border: 1px solid red; */
     width: 25px;
-    height: 25px;
+    height: 25px; 
     background-image: url("/icons/add.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-#add-img:hover {
+#add-task:hover #add-img {
     background-image: url("/icons/add-hover.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -103,18 +129,89 @@ header h1 {
     padding-left: 10px;
 }
 
-
-.sidebar-left {
-    width: 20%;
-    backdrop-filter: blur(14px) saturate(100%);
-    -webkit-backdrop-filter: blur(10px) saturate(100%);
-
+.sidebar-right h2 {
+    color: rgb(35, 35, 35);
+    font-size: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    cursor: default;
 }
 
-.sidebar-right {
-    width: 0%;
+#taskName {
+    background-color: #ffffff00;
+    align-self: center;
+    padding: 10px 0px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    border-radius: 10px;
+    width: 90%;
+    font-size: 20px;
+    font-family: Helvetica;
+    font-weight: bold;
+    backdrop-filter: blur(50px) saturate(100%);
+    -webkit-backdrop-filter: blur(50px) saturate(100%);
 }
 
+
+
+#taskDesc {
+    background-color: #ffffff00;
+    align-self: center;
+    margin: 10px 0px;
+    padding: 0px 0px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: Helvetica;
+    text-align: left;
+    width: 90%;
+    height: 20%;
+    backdrop-filter: blur(50px) saturate(100%);
+    -webkit-backdrop-filter: blur(50px) saturate(100%);
+}
+
+#taskName::placeholder, #taskDesc::placeholder {
+    color: grey;
+}
+
+.sidebar-right button {
+    background-color: #00000010;
+    align-self: center;
+    /* padding: 10px 20px; */
+    backdrop-filter: blur(200px) saturate(100%);
+    -webkit-backdrop-filter: blur(200px) saturate(100%);
+    width: 80%;
+    align-self: center;
+    font-size: 20px;
+    color: white;
+    font-family: Helvetica;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid rgba(209, 213, 219, 0.7);
+    border-radius: 20px;
+}
+
+.sidebar-right button:hover {
+    background-color: #00000030;
+}
+
+.sidebar-right button:active {
+    background-color: #00000060;
+}
+
+.sidebar-right a {
+    margin-left: 20px;
+    padding-top: 20px;
+    text-decoration: double;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Helvetica;
+}
+
+.details input {
+    font-size: 100px;
+    display: none;
+}
 
 footer {
     color: #DDDDDD;
